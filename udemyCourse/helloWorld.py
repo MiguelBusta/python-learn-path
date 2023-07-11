@@ -5,5 +5,5 @@ print("Welcome to 'BMW automotive'")
 #OR
 print('Welcome to "BMW automotive"')
 
-#You can print operations too 
+#You can print operations too
 print(5+1)

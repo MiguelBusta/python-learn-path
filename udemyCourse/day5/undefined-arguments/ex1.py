@@ -6,10 +6,10 @@ Undefined Arguments
 """
 
 def suma_cuadrados(*args):
-    
+
     total = 0
-    
+
     for num in args:
         total += num**2
-        
+
     return total
