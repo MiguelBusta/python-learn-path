@@ -1,5 +1,5 @@
 """
-Date: 16/10/2023
+Date: 17/10/2023
 Miguel Ángel Bustamante Pérez
 
 * Exercise 4
@@ -10,17 +10,25 @@ Comments:
 0 and 1 are not odd numbers
 """
 
-def const_cousins(num):
+def const_cousins(number):
     """
     TODO: This function will show all the odd numbers that exists from zero to the num value (included)
     """
     count_odd = 0
     odd_numbers = []
-    for i in range(0, num+1 ,1):
-        if i%2 != 0 and i != 0 and i != 1:
-            odd_numbers.append(i)
+    is_prime = False
+
+    for num in range(2, number+1):
+        is_prime = True
+        for i in range(2,num):
+            if num%i == 0:
+                is_prime = False
+                break
+        if is_prime:
+            # Update values
+            odd_numbers.append(num)
             count_odd += 1
     print(f"The amount of odd numbers within the range is: {count_odd}")
     print(f"The list of odd numbers within that range is equal to: {odd_numbers}")
 
-const_cousins(5)
+const_cousins(50)
