@@ -9,3 +9,8 @@ TODO: This program is only for educational purposes, in this case to learn how t
 Comments:
 
 """
+
+import os
+
+route = os.getcwd()
+print(route)
